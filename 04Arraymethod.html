@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [23,45,67,89,08,76]
+
+        let a = array.toString()
+        console.log(a);
+
+        let b = array.join(" @ ")
+        console.log(b);
+
+        let c = array.pop()
+        console.log(c , array);
+
+        let d = array.push(89)
+        console.log(d, array);
+
+        let e = array.shift()
+        console.log(e);
+
+        let f = array.unshift(45)
+        console.log(f, array);
+
+        let g = array.splice(0,3,"k","r","i")
+        console.log(g,array);
+
+        let h = array.slice(2,5)
+        console.log(h , array);
+
+        let i = array.reverse()
+        console.log(i);
+
+        let a1 = [1,2,3]
+        let a2 = [4,5,6]
+        let a3 = [7,8,9]
+        let j = a2.concat(a3,a1)
+        console.log(j);
+
+        let k1 = [23,12,45,56,0,100,91]
+        let k = k1.sort()
+        console.log(k);
+
+        let comper = (a,b) => a-b
+        let l = k1.sort(comper)
+        console.log(l);
+
+        let comper1 = (a,b) => b-a
+        let m = k1.sort(comper1)
+        console.log(m);
+    </script>
+</body>
+</html>
