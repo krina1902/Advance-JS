@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            fname : "sammer",
+            lname : "trivedi",
+            phoneno : 1234567890,
+            email : "st@gmail.com",
+            salary1 : () => 5000,
+            salary2 : () => 50000,
+            fullname : function (){
+                return this.fname + " " + this.lname
+            },
+            dblsalary : function () { 
+                return this.salary1() + this.salary2()
+            },
+            hobbies: ["Dance" , "Swim" , "Games"]
+        }
+        console.log(person.fullname());
+        console.log(person.dblsalary());
+        console.log(person.salary1())
+        console.log(person.hobbies[3]);
+    </script>
+</body>
+</html>
