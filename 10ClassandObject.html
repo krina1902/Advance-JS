@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Addmission {
+            fill(name){
+                this.name = name
+            }
+            submit(){
+                alert(this.name + " your form is submit")
+            }
+            cancel(){
+                alert (this.name + " your form is cancel")
+            }
+        }
+
+        let mahesh = new Addmission()
+        mahesh.fill("mahesh")
+        mahesh.submit()
+        console.log(mahesh);
+
+        let sahesh = new Addmission()
+        sahesh.fill("sahesh")
+        sahesh.cancel()
+        console.log(sahesh);
+
+    </script>
+</body>
+</html>

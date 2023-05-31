@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let pos = () => console.log("Hello, this is a positive number")
+    let neg = () => console.log("Hello, this is a negative number")
+
+    function no(a,b,callback){
+        console.log(a+b)
+        callback()
+    }
+
+    no(-2,-3,neg)
+    no(2,4,pos)
+
+    </script>
+</body>
+</html>
