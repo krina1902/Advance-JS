@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            fill(name){
+                this.name = name
+            }
+            eat(){
+                console.log(this.name + " animal is eating");
+            }
+            jump(){
+                console.log(this.name + " animal is jumping");
+            }
+        }
+        class dog extends Animal{
+            jump(){
+                console.log("dog is jumping,,,,");
+            }
+        }
+        let monkey = new Animal
+        monkey.fill("monkey")
+        monkey.eat()
+        let dogy = new dog
+        dogy.fill("dogy")
+        dogy.jump()
+        dogy.eat()
+    </script>
+</body>
+</html>
