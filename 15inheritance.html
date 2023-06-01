@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        class Animal{
+            shout(){
+                console.log("it is shouting!!");
+            }
+            eat(){
+                console.log("it is eating!!");
+            }
+        }
+        class Animal2 extends Animal{
+            run(){
+                console.log("it is running!!");
+            }
+        }
+
+        let cat = new Animal
+        let dog = new Animal2
+        cat.shout()
+        cat.eat()
+        dog.run()
+        dog.eat()
+    </script>
 </body>
 </html>
