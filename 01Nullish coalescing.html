@@ -9,13 +9,14 @@
 <body>
     <script>
         let marks = {
-            roshan:0,
+            roshan:null,
             shyam: 33,
-            krish: ""
+            krish: undefined,
+            vivek:56
         }
         let msg = `${marks.vivek ?? 50} marks is your result `
         let msg1 = `${marks.roshan ?? 50} marks is your result `
-        let msg2 = `${marks.roshan || 50} marks is your result `
+        let msg2 = `${marks.shyam ?? 50} marks is your result `
         let msg3 = `${marks.krish ?? 50} marks is your result `
 
          console.log(msg);
@@ -23,7 +24,13 @@
          console.log(msg2);
          console.log(msg3);
 
-         //use for null or undifined values show
+         //example2
+         let a = null ?? 50
+         let b = undefined ?? 50
+         console.log(a);
+         console.log(b);
+
+         //The nullish coalescing ( ?? ) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined , and otherwise returns its left-hand side operand.
 
     </script>
 </body>
